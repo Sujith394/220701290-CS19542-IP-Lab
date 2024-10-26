@@ -1,0 +1,56 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:18] "GET /static/css/home.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:18] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:19] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:20] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:20] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:20] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:26] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:10:26] "GET /static/css/about.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:01] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:01] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:02] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:03] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:03] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:03] "[35m[1mGET /static/css/images/background.mp4 HTTP/1.1[0m" 206 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:09] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:09] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /tag HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/css/tags.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/scripts/tag.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/css/images/tagbg.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Beach.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Adventure.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Cultural.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Wildlife.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Mountain.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Urban.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Historical.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Wellness.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Eco.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Road.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:16] "GET /static/tags/Pilgrimage.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "GET /tag/Beach%20Holidays HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "[32mGET /static//css/tags.css HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "[32mGET /static//scripts/activity.js HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "[36mGET /static/css/tags.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "GET /static/scripts/activity.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "GET /static/activity/Goa.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "[36mGET /static/css/images/tagbg.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "GET /static/activity/Andaman.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:18] "GET /static/activity/Kovalam.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "GET /city/Goa HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "GET /static/css/city.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "GET /static/scripts/city.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "GET /static/css/images/city12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "[33mGET /static/cities/Goa2 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "[33mGET /static/cities/Goa1 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "[33mGET /static/cities/Goa3 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2024 10:13:19] "[33mGET /static/cities/Goa4 HTTP/1.1[0m" 404 -

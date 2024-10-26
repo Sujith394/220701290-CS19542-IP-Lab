@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/static/css/images/travel.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .header1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            margin-bottom: 30px;
+        }
+        .logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 32px;
+            cursor: pointer;
+        }
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: 0.3s;
+        }
+        form.form-inline {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1;
+  margin: auto; /* Added line to center the form horizontally */
+}
+        .navbar a:hover::before {
+            width: 100%;
+        }
+        form {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            z-index: 1;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="date"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+    
+    </style>
+</head>
+<body>
+   
+    <section class="showcase">
+        <video src="/static/css/images/bg.mp4" muted loop autoplay></video>
+    <header class="header1">
+        <a href="#" class="logo"><span style="color: #7BB5FF">Wander</span> <span style="color: #FDF8F2">Buddy</span></a>
+        <nav class="navbar">
+            <a href="/home">Home</a>
+            <a href="/tag">Explore</a>
+            <a href="/join">Join</a>
+            <a href="/AI">AI</a>
+        </nav>
+    </header>
+    <form action="/AI" method="POST" class="form-inline">
+        <div class="form-group">
+            <label for="source">From:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="source"
+                id="source"
+                placeholder="Enter your boarding point"
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="destination">To:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="destination"
+                id="destination"
+                placeholder="Enter your destination"
+                required
+            />
+        </div>
+        <div class="form-group">
+            <label for="date">Travel Date:</label>
+            <input type="date" class="form-control" name="date" id="date" required/>
+        </div>
+        <div class="form-group">
+            <label for="return">Return Date:</label>
+            <input type="date" class="form-control" name="return" id="return" required/>
+        </div>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+    <div id="loading-container" class="hidden"> <div class="loading-animation"></div>
+    </section>
+
+</body>
+</html>

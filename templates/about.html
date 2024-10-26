@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/static/css/about.css">
+  <link rel="icon" href="/static/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      text-align: center;
+      padding: 20px;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      margin: 0;
+      color: white;
+      font-size: 1.5em;
+      background: linear-gradient(45deg, #0093E9, #80D0C7);
+      overflow: hidden;
+    }
+
+    .showcase {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-transform: uppercase;
+      margin: 0.5em 0;
+      animation: slideInFromLeft 1s ease-out;
+    }
+
+    h2, h3 {
+      font-size: 2em;
+      margin: 0.5em 0;
+      animation: slideInFromRight 1s ease-out;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    li {
+      font-size: 1.5em;
+      margin: 0.5em 0;
+      animation: slideInFromBottom 1s ease-out;
+    }
+
+    .back {
+      display: inline-block;
+      font-size: 1.2em;
+      background: #0093e9b0;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 20px;
+      color: white;
+      border-radius: 50px;
+      letter-spacing: 2px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .back:hover {
+      letter-spacing: 6px;
+      opacity: 0.7;
+      background: #007bb5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInFromLeft {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(0); }
+    }
+
+    @keyframes slideInFromRight {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
+    }
+
+    @keyframes slideInFromBottom {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -50px;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      animation: rise 10s infinite ease-in;
+    }
+
+    .bubble:nth-child(1) { left: 10%; animation-duration: 7s; animation-delay: 2s; }
+    .bubble:nth-child(2) { left: 20%; animation-duration: 5s; animation-delay: 4s; }
+    .bubble:nth-child(3) { left: 30%; animation-duration: 8s; animation-delay: 6s; }
+    .bubble:nth-child(4) { left: 50%; animation-duration: 10s; animation-delay: 1s; }
+    .bubble:nth-child(5) { left: 70%; animation-duration: 9s; animation-delay: 3s; }
+    .bubble:nth-child(6) { left: 90%; animation-duration: 6s; animation-delay: 5s; }
+
+    @keyframes rise {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-1000px) scale(1.5); }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="showcase">
+    <div class="header">
+      <h1>Welcome to Wander Buddy</h1>
+    </div>
+    <h2>Internet Programming Mini Project</h2>
+    <h3>Made by:</h3>
+    
+    <h1> Sujith S S</h1>
+    
+    <a class="back" href="/tag">Back</a>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </section>
+</body>
+
+</html>
