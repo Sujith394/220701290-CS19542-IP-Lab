@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ONLINE STUDENT REGISTRATION FORM</title>
+        <style>
+            body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 130vh;
+    background-image:url(bgg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.text-outside {
+    width: 100%;
+    text-align: center;  /* Center the text */
+    color: white;        /* Text color */
+    font-size: 25px;     /* Text size */
+    font-weight: bold;   /* Bold text */
+    padding: 15px 0;     /* Padding for some space around the text */
+    background-color: #7e41c7; /* Optional: add a background color to the text section */
+    margin-bottom: 15px; /* Space between the text and the form */
+    border-radius: 25px;
+}
+
+ .form-container {
+    margin-top: 0.5px;
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 30px;
+            width: 500px;
+            margin-left: -300px;
+	}
+
+    
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+	color:rgb(8, 82, 201);
+    
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.form-group label {
+    width: 200px; /* Fixed width for labels */
+    text-align: left;
+    font-size: 20px;
+    
+}
+.form-group select {
+    width:80%;
+    padding: 5px;
+    margin-left:5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="button"],
+.form-group input[type="radio"] {
+    width:80%;
+    padding: 5px;
+    margin-left: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    margin-left: 3;
+}
+
+.form-group input[type="button"]{
+    width: 20%;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 190px;
+    border: 2px solid #ccc;
+}
+
+.form-group input[type="reset"]{
+    width: 20%;
+    margin-top: 20px;
+    background-color: #ed0a0a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 190px;
+    border: 2px solid #ccc;
+    height: 30px;
+}
+.form-group input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="form-container">
+            <div class="text-outside">
+                <p>RAJALAKSHMI ENGINEERING COLLEGE</p>
+            </div>
+            <h1>Course Registration Form</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rollno">Roll No:</label>
+                    <input type="text" id="rollno" name="rollno">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="Male"> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="Female"> Female
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year:</label>
+                    <select id="year" name="year">
+                        <option value="">Select Year</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+    
+                </div>
+                <div class="form-group">
+                    <label for="semester">Semester:</label>
+                    <select id="semester" name="semester">
+                        <option value="">Select Semester</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    
+                </div>
+    
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department">
+                </div>
+                <div class="form-group">
+                    <label for="section">Section:</label>
+                    <input type="text" id="section" name="section">
+                </div>
+                <div class="form-group">
+                    <label for="mobile_no">Mobile No:</label>
+                    <input type="text" id="mobile_no" name="mobile_no">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail ID:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country">
+                </div>
+                <div class="form-group">
+                    <label for="code">Subject Code:</label>
+                    <input type="text" id="code" name="code">
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode:</label>
+                    <input type="text" id="pincode" name="pincode">
+                </div>
+                <div class="form-group">
+                    <input type="button" value="Submit" onclick="validateForm()">
+                </div>
+                <div class="form-group"><input type="reset"></div>
+                
+            </form>
+        </div>
+        <script>
+            function validateForm() {
+            let name = document.getElementById('name').value;
+            let rollno = document.getElementById('rollno').value;
+            let gender = document.querySelector('input[name="gender"]:checked');
+            let year = document.getElementById('year').value;
+            let department = document.getElementById('department').value;
+            let section = document.getElementById('section').value;
+            let mobileNo = document.getElementById('mobile_no').value;
+            let email = document.getElementById('email').value;
+            let address = document.getElementById('address').value;
+            let city = document.getElementById('city').value;
+            let country = document.getElementById('country').value;
+            let pincode = document.getElementById('pincode').value;
+            let code= document.getElementById('code').value;
+        
+            let namePattern = /^[A-Za-z\s]+$/;
+            let rollnoPattern = /^[0-9]{9}$/;
+            
+            let departmentPattern = /^[A-Za-z\s]+$/;
+            let sectionPattern = /^[A-Za-z]{1}$/;
+            let mobilePattern = /^[0-9]{10}$/;
+            let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            let pincodePattern = /^[0-9]{6}$/;
+            let codePattern=/^[A-Za-z]{2}\-[0-9]{5}$/;
+
+            if (!namePattern.test(name)) {
+                alert("Please enter a valid name (letters and spaces only).");
+                return false;
+            }
+            if (!rollnoPattern.test(rollno)) {
+                alert("Please enter a valid roll number (numbers only).");
+                return false;
+            }
+            if (!gender) {
+                alert("Please select a gender.");
+                return false;
+            }
+            
+            if (!departmentPattern.test(department)) {
+                alert("Please enter a valid department (letters and spaces only).");
+                return false;
+            }
+            if (!sectionPattern.test(section)) {
+                alert("Please enter a valid section (alphanumeric characters only).");
+                return false;
+            }
+            if (!mobilePattern.test(mobileNo)) {
+                alert("Please enter a valid mobile number (10 digits).");
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            if (address.trim() === "") {
+                alert("Please enter your address.");
+                return false;
+            }
+            if (!namePattern.test(city)) {
+                alert("Please enter a valid city (letters and spaces only).");
+                return false;
+            }
+            if (!namePattern.test(country)) {
+                alert("Please enter a valid country (letters and spaces only).");
+                return false;
+            }
+            if (!pincodePattern.test(pincode)) {
+                alert("Please enter a valid pincode (6 digits).");
+                return false;
+            }
+            if (!codePattern.test(code)) {
+                alert("Please enter a valid Subject Code.");
+                return false;
+            }
+            alert("Registration Successful");
+            return true;
+        }
+        </script>
+    </body>
+</html>
